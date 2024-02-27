@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Side Menu with Social Footer</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="divOrders" style="display: none;">
+        <p>You don't have any orders</p>
+    </div>
+    <div id="divRewards" style="display: none;">
+        <p>You don't have any Rewards</p>
+    </div>
+    <div id="divFood" style="display: none;">
+        <p>Menu is Empty</p>
+    </div>
+    <div id="divGifts" style="display: none;">
+        <p>You don't have any Gifts</p>
+    </div>
+    <div id="divHelpCenter" style="display: none;">
+        <p>If you have question please contact <b>646-646-6478</b> or send queries to <b>queries@gmail.com</b> </p>
+    </div>
+    <div id="divAccounts" style="display: none;">
+        <ul>
+            <li>Notifications</li>
+            <li>Profile</li>
+            <li>Settings</li>
+        </ul>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+<aside class="side-menu">
+    <nav>
+        <ul>
+            <li onclick="showOrders()"><span>👤</span>Your Orders</a></li>
+            <li onclick="showRewards()"><span>🎁</span> Rewards</li>
+            <li onclick="showFoods()"><span>🍔</span> Food & Beverages</li>
+            <li onclick="showGifts()"><span>🎉</span> Gifts</li>
+            <li onclick="showHelpLine()"><span>❓</span> Help Centre</li>
+            <li onclick="showPayments()"><span>💳</span>Payments</li>
+            <li onclick="showSettings()"><span>⚙️</span> Account & Settings</li>
+        </ul>
+        <br>
+        <span class="footer-text">Share | Rate us</span>
+    </nav>
+</aside>
+
+<footer class="social-footer">
+    
+    <div class="social-icons">
+        <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+          </svg></span> 
+        <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+    </svg></span> 
+    </div>
+</footer>
