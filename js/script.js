@@ -18,6 +18,8 @@ function validateLogin() {
       alert("Username and Password are required");
     } else {
       // Redirect to the dashboard screen (you can replace 'dashboard.html' with the actual path)
+      localStorage.setItem('authenticated', 'true');
+     
       window.location.href = "Home.html";
     }
   }
