@@ -21,12 +21,23 @@
        
       </svg></button>
     <p>OR</p>
-    <div class="input-icon-wrapper">
+    <!-- <div class="input-icon-wrapper">
         <input type="tel" id="mobileNumber" class="mobile-number-input" placeholder="Mobile Number" maxlength="10">
         <i class="fas fa-mobile"></i>
     </div>
     
-    <button onclick="submitMobileNumber()" class="button">Login/Register</button>
+    <button onclick="submitMobileNumber()" class="button">Login/Register</button> -->
+   
+      <form id="loginForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+  
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+  
+        <button type="button" onclick="validateLogin()">Login</button>
+      </form>
+    
 </div>
 
 <script src="js/script.js"></script>

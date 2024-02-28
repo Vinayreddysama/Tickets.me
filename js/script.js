@@ -9,6 +9,19 @@ function submitMobileNumber() {
         alert('Please enter a mobile number.');
     }
 }
+function validateLogin() {
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+  
+    // Simple validation - Check if username and password are not empty
+    if (username.trim() === "" || password.trim() === "") {
+      alert("Username and Password are required");
+    } else {
+      // Redirect to the dashboard screen (you can replace 'dashboard.html' with the actual path)
+      window.location.href = "index.html";
+    }
+  }
+  
 function redirectGoogle(){
     location.href='https://www.google.com/';
 }
